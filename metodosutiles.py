@@ -50,3 +50,7 @@ for valor in persona.values():
     print("valor",valor) #imprime los valores del diccionario
 for clave,valor in persona.items():
     print(clave,"->",valor) #imprime las claves y valores del diccionario   
+persona.clear() #elimina todos los elementos del diccionario
+config={"nada":"dev"}
+config.setdefault("puerto",8080) #agrega la clave "puerto" con el valor 8080 si no existe, si ya existe devuelve su valor asociado
+print(config)
