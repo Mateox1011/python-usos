@@ -1,3 +1,16 @@
+frutas = ["manzana", "banana", "naranja"]
+print(frutas[0]) # Primer elemento: 'manzana'
+print(frutas[-1]) # Último elemento: 'naranja'
+```
+### Agregar y eliminar elementos
+```python
+frutas.append("uva") # Agrega 'uva' al final
+frutas.insert(1, "pera") # Inserta 'pera' en la posición 1
+print(frutas) # ['manzana', 'pera', 'banana', 'naranja', 'uva']
+frutas.remove("banana") # Elimina la primera aparición de 'banana'
+ultimo = frutas.pop() # Quita el último elemento ('uva') y lo devuelve
+print("Elemento eliminado:", ultimo)
+del frutas[0] # Elimina el elemento en la posición 0
 numeros=[3,7,3,2,10]
 print(numeros.count(3)) #cuenta el numero de veces que aparece el elemento en la lista
 print(numeros.index(7)) #devuelve el indice de la primera aparicion del elemento en la lista
